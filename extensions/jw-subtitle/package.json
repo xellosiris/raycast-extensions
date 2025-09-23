@@ -16,7 +16,7 @@
   "commands": [
     {
       "name": "jw-subtitle",
-      "title": "Fetch Subtitle",
+      "title": "Fetch Jw Subtitle",
       "subtitle": "Fetch JW video subtitle",
       "description": "Fetch subtitle from jw.org video",
       "mode": "view"

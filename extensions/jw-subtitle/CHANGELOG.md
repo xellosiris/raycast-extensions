@@ -1,3 +1,3 @@
-# JW tubtitle Changelog
+# JW Subtitle Changelog
 
 ## [Initial Version] - {PR_MERGE_DATE}

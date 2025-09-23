@@ -22,7 +22,10 @@ export default function Command() {
       if (!data || !data.media || data.media.length === 0) {
         throw new Error("No media or subtitle found");
       }
-      const subtitleURL = data.media[0].files[0].subtitles.url;
+      const subtitleURL = data.media[0]?.files?.[0]?.subtitles?.url;
+      if (!subtitleURL) {
+        throw new Error("No subtitle URL found");
+      }
       const res = await axios.get(subtitleURL);
       const subtitles = parser
         .parse(res.data, "subtitles")
