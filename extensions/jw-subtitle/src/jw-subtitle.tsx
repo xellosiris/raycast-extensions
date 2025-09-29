@@ -11,7 +11,7 @@ export default function Command() {
   async function handleSubmit() {
     try {
       showToast({ style: Toast.Style.Animated, title: "Fetching..." });
-      if (!url.startsWith("https://www.jw.org/finder?srcid=share")) {
+      if (!url.startsWith("https://www.jw.org")) {
         throw new Error("Invalid URL from jw.org");
       }
       const urlParams = new URL(url).searchParams;
